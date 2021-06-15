@@ -173,7 +173,7 @@ $berita = query("SELECT * FROM berita ");
                 <ul class="social">
                   <li><a href="radar.php"><span >Kunjungi</span></a></li>
                 </ul>
-                <img src="images/CheckKes.jpg" alt="Image" style="width:500px;height: 300px;" class="img-fluid">
+                <img src="images/CheckKese.png" alt="Image" style="width:500px;height: 300px;" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Check Penyakit</h3>
