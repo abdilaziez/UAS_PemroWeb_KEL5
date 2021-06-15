@@ -1,20 +1,4 @@
-<?php
-session_start();
 
-if (!isset($_SESSION["login"])) {
-  header("Location: login.php");
-}
-require 'connect.php';
-
-$jenis = query("SELECT * FROM jenispasien ");
-$gejala = query("SELECT * FROM gejala ");
-$update = query("SELECT * FROM updatecovid ");
-$rs = query("SELECT * FROM rs ");
-$berita = query("SELECT * FROM berita ");
-$pesan = query("SELECT * FROM pesan ");
-
-
-?>
 
 
 <!doctype html>
@@ -125,7 +109,40 @@ $pesan = query("SELECT * FROM pesan ");
       </div>
     </div>
 
-    
+    <div class="intro-section">
+        <div class="container-table100">
+          <div class="wrap-table100">
+            <div class="table100 ver1 m-b-110">
+              <table data-vertable="ver1">
+                <h1 class="m-b-10 text-center text-warning">Tabel Rekapan Data Jenis Pasien</h1>
+                <thead>
+                  <tr class="row100 head">
+                    <th class="column100 column1" data-column="column1">No</th>
+                    <th class="column100 column2" data-column="column2">Jenis Pasien</th>
+                    <th class="column100 column3" data-column="column3">Gambar</th>
+                    <th class="column100 column4" data-column="column4">Keterangan</th>
+                    <th class="column100 column5" data-column="column5">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <?php $i = 1; ?>
+                <?php foreach ($jenis as $var):?>
+                  <tr class="row100">
+                    <td class="column100 column1" data-column="column1"><?php echo $i; ?></td>
+                    <td class="column100 column2" data-column="column2"><?php echo  $var['jenisPasien'];?></td>
+                    <td class="column100 column3" data-column="column3"><img src="upload/<?php echo $var['gambar']; ?>" style="width : 150px; height: 150px;" alt=""> </td>
+                    <td class="column100 column4" data-column="column4"><?php echo $var['keterangan']; ?></td>
+                    <td class="column100 column5" data-column="column5"><a class="btn btn-danger" href="hapus.php?id_jenis=<?= $var["id_jenis"];?>" onclick="return confirm('Apakah Anda yakin untuk menghapus?'" role="button">Hapus</a></td>
+                  </tr>
+                <?php $i++;?>
+                <?php endforeach; ?>
+              </tbody>
+              </table>
+              <a class="btn btn-primary" href="jenispasien.php" role="button">Tambah Data</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="intro-section">
           <div class="container-table100">
