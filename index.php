@@ -115,7 +115,7 @@ $berita = query("SELECT * FROM berita ");
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/covid.jpg);" data-aos="fade" id="beranda">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/kesehatan.jpg);" data-aos="fade" id="beranda">
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
