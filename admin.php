@@ -1,4 +1,20 @@
+<?php
+session_start();
 
+if (!isset($_SESSION["login"])) {
+  header("Location: login.php");
+}
+require 'connect.php';
+
+$jenis = query("SELECT * FROM jenispasien ");
+$gejala = query("SELECT * FROM gejala ");
+$update = query("SELECT * FROM updatecovid ");
+$rs = query("SELECT * FROM rs ");
+$berita = query("SELECT * FROM berita ");
+$pesan = query("SELECT * FROM pesan ");
+
+
+?>
 
 
 <!doctype html>
