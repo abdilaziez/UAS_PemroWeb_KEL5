@@ -20,7 +20,7 @@ $pesan = query("SELECT * FROM pesan ");
 <!doctype html>
 <html lang="en">
   <head>
-    <title>FightCovid &mdash; Admin</title>
+    <title>BisaSehat &mdash; Admin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -93,7 +93,7 @@ $pesan = query("SELECT * FROM pesan ");
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">FightCovid<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -130,7 +130,7 @@ $pesan = query("SELECT * FROM pesan ");
           <div class="wrap-table100">
             <div class="table100 ver1 m-b-110">
               <table data-vertable="ver1">
-                <h1 class="m-b-10 text-center text-warning">Tabel Rekapan Data Jenis Pasien</h1>
+                <h1 class="m-b-10 text-center text-warning">Input Artikel Penganan Penyakit</h1>
                 <thead>
                   <tr class="row100 head">
                     <th class="column100 column1" data-column="column1">No</th>
@@ -160,114 +160,17 @@ $pesan = query("SELECT * FROM pesan ");
         </div>
       </div>
 
-      <div class="intro-section">
-          <div class="container-table100">
-            <div class="wrap-table100">
-              <div class="table100 ver1 m-b-110">
-                <table data-vertable="ver1">
-                  <h1 class="m-b-10 text-center text-warning">Tabel Rekapan Data Gejala</h1>
-                  <thead>
-                    <tr class="row100 head">
-                      <th class="column100 column1" data-column="column1">No</th>
-                      <th class="column100 column2" data-column="column2">Gejala</th>
-                      <th class="column100 column4" data-column="column4">Keterangan</th>
-                      <th class="column100 column4" data-column="column4">Gambar</th>
-                      <th class="column100 column5" data-column="column5">Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  <?php $i = 1; ?>
-                  <?php foreach ($gejala as $var):?>
-                    <tr class="row100">
-                      <td class="column100 column1" data-column="column1"><?php echo $i; ?></td>
-                      <td class="column100 column2" data-column="column2"><?php echo  $var['gejala'];?></td>
-                      <td class="column100 column4" data-column="column4"><?php echo $var['keterangan']; ?></td>
-                      <td class="column100 column3" data-column="column3"><img src="upload/<?php echo $var['gambar']; ?>" style="width : 150px; height: 150px;" alt=""> </td>
-                      <td class="column100 column5" data-column="column5"><a class="btn btn-danger" href="hapus.php?id_gejala=<?= $var["id_gejala"];?>" onclick="return confirm('Apakah Anda yakin untuk menghapus?'" role="button">Hapus</a></td>
-                    </tr>
-                  <?php $i++;?>
-                  <?php endforeach; ?>
-                </tbody>
-                </table>
-                <a class="btn btn-primary" href="gejala.php" role="button">Tambah Data</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      
 
-        <div class="intro-section">
-            <div class="container-table100">
-              <div class="wrap-table100">
-                <div class="table100 ver1 m-b-110">
-                  <table data-vertable="ver1">
-                    <h1 class="m-b-10 text-center text-warning">Tabel Rekapan Data Update Covid19</h1>
-                    <thead>
-                      <tr class="row100 head">
-                        <th class="column100 column1" data-column="column1">No</th>
-                        <th class="column100 column2" data-column="column2">positif</th>
-                        <th class="column100 column3" data-column="column3">pdp</th>
-                        <th class="column100 column4" data-column="column4">odp</th>
-                        <th class="column100 column5" data-column="column5">Aksi</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    <?php $i = 1; ?>
-                    <?php foreach ($update as $var):?>
-                      <tr class="row100">
-                        <td class="column100 column1" data-column="column1"><?php echo $i; ?></td>
-                        <td class="column100 column2" data-column="column2"><?php echo  $var['positif'];?></td>
-                        <td class="column100 column3" data-column="column3"><?php echo $var['pdp']; ?></td>
-                        <td class="column100 column4" data-column="column4"><?php echo $var['odp']; ?></td>
-                        <td class="column100 column5" data-column="column5"><a class="btn btn-danger" href="hapus.php?id_update=<?= $var["id_update"];?>" onclick="return confirm('Apakah Anda yakin untuk menghapus?'" role="button">Hapus</a></td>
-                      </tr>
-                    <?php $i++;?>
-                    <?php endforeach; ?>
-                  </tbody>
-                  </table>
-                  <a class="btn btn-primary" href="updatecovid.php" role="button">Tambah Data</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
-          <div class="intro-section">
-              <div class="container-table100">
-                <div class="wrap-table100">
-                  <div class="table100 ver1 m-b-110">
-                    <table data-vertable="ver1">
-                      <h1 class="m-b-10 text-center text-warning">Tabel Rekapan Data Rumah Sakit</h1>
-                      <thead>
-                        <tr class="row100 head">
-                          <th class="column100 column1" data-column="column1">No</th>
-                          <th class="column100 column2" data-column="column2">Nama Rumah Sakit</th>
-                          <th class="column100 column3" data-column="column3">Daerah</th>
-                          <th class="column100 column5" data-column="column5">Aksi</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                      <?php $i = 1; ?>
-                      <?php foreach ($rs as $var):?>
-                        <tr class="row100">
-                          <td class="column100 column1" data-column="column1"><?php echo $i; ?></td>
-                          <td class="column100 column2" data-column="column2"><?php echo  $var['namaRumahSakit'];?></td>
-                          <td class="column100 column3" data-column="column3"><?php echo $var['daerah']; ?></td>
-                          <td class="column100 column5" data-column="column5"><a class="btn btn-danger" href="hapus.php?id_rs=<?= $var["id_rs"];?>" onclick="return confirm('Apakah Anda yakin untuk menghapus?'" role="button">Hapus</a></td>
-                        </tr>
-                      <?php $i++;?>
-                      <?php endforeach; ?>
-                    </tbody>
-                    </table>
-                    <a class="btn btn-primary" href="rs.php" role="button">Tambah Data</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
             <div class="intro-section">
                 <div class="container-table100">
                   <div class="wrap-table100">
                     <div class="table100 ver1 m-b-110">
                       <table data-vertable="ver1">
-                        <h1 class="m-b-10 text-center text-warning">Tabel Rekapan Data Berita</h1>
+                        <h1 class="m-b-10 text-center text-warning">Input Artikel Kesehatan</h1>
                         <thead>
                           <tr class="row100 head">
                             <th class="column100 column1" data-column="column1">No</th>

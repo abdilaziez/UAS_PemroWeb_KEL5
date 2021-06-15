@@ -193,7 +193,7 @@ $berita = query("SELECT * FROM berita ");
 
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Jenis Pasiennya</h2>
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Penanganan Penyakit</h2>
           </div>
         </div>
 
@@ -225,130 +225,17 @@ $berita = query("SELECT * FROM berita ");
 
 
 
-        <section class="site-section" id="kenali">
-          <div class="container">
-
-            <div class="row mb-5 justify-content-center">
-              <div class="col-md-7 text-center">
-                <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Jenis Gejalanya</h2>
-              </div>
-            </div>
-
-            <div class="row align-items-lg-center" >
-              <?php $i = 1; ?>
-              <?php foreach ($gejala as $var):?>
-              <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-                <div class="owl-carousel slide-one-item-alt">
-                  <img src="upload/<?php echo $var['gambar']; ?>" style="width : 200px; height: 200px;" alt="Image" class="img-fluid">
-                </div>
-
-              </div>
-              <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="owl-carousel slide-one-item-alt-text">
-                  <div>
-                    <h2 class="section-title mb-3"><?php echo $i; ?>. <?php echo $var['gejala']; ?></h2>
-                    <p><?php echo $var['keterangan']; ?></p>
-                  </div>
-                </div>
-              </div>
-              <?php $i++; ?>
-            <?php endforeach; ?>
-            </div>
-          </div>
-        </section>
+        
 
 
-    <section class="site-section bg-light" id="updateCovid19">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade-up">
-            <h2 class="section-title mb-3">Update Covid 19</h2>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="pricing">
-              <h3 class="text-center text-info">ODP</h3>
-              <div class="price text-center mb-4 ">
-                <span>Orang Dalam Pengawasan</span>
-              </div>
-              <?php foreach ($datacovidODP as $data):?>
-              <h3 class="text-center text-info"><?php echo $data['jumlahODP']; ?></h3>
-            <?php endforeach; ?>
-            </div>
-          </div>
+    
 
-          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 pricing-popular" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing">
-              <h2 class="text-center text-danger">POSITIF</h2>
-              <div class="price text-center mb-4 ">
-                <span>Konfirmasi Positif</span>
-              </div>
-              <?php foreach ($datacovidPositif as $data):?>
-              <h3 class="text-center text-danger"><?php echo $data['jumlahPositif']; ?></h3>
-            <?php endforeach; ?>
-          </div>
-          </div>
-
-          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing">
-              <h3 class="text-center text-warning">PDP</h3>
-              <div class="price text-center mb-4 ">
-                <span>Pasien Dalam Pengawasan</span>
-              </div>
-              <?php foreach ($datacovidPDP as $data):?>
-              <h3 class="text-center text-info"><?php echo $data['jumlahPDP']; ?></h3>
-            <?php endforeach; ?>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="rsRujukan">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">Rumah Sakit Rujukan</h2>
-          </div>
-        </div>
-        <div class="intro-section">
-            <div class="container-table100">
-              <div class="wrap-table100">
-                <div class="table100 ver1 m-b-110">
-                  <table data-vertable="ver1">
-                    <thead>
-                      <tr class="row100 head">
-                        <th class="column100 column1" data-column="column1">No</th>
-                        <th class="column100 column2" data-column="column2">Nama Rumah Sakit</th>
-                        <th class="column100 column3" data-column="column3">Daerah</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    <?php $i = 1; ?>
-                    <?php foreach ($rs as $var):?>
-                      <tr class="row100">
-                        <td class="column100 column1" data-column="column1"><?php echo $i; ?></td>
-                        <td class="column100 column2" data-column="column2"><?php echo  $var['namaRumahSakit'];?></td>
-                        <td class="column100 column3" data-column="column3"><?php echo $var['daerah']; ?></td>
-                      </tr>
-                    <?php $i++;?>
-                    <?php endforeach; ?>
-                  </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>
+    
     <section class="site-section" id="beritaTerkini">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">Berita Terkini</h2>
+            <h2 class="section-title mb-3">Tips Kesehatan</h2>
           </div>
         </div>
 
