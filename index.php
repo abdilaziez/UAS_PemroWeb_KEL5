@@ -17,7 +17,7 @@ $berita = query("SELECT * FROM berita ");
 <!doctype html>
 <html lang="en">
   <head>
-    <title>FightCovid &mdash; Beranda</title>
+    <title>BisaSehat &mdash; Beranda</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -89,7 +89,7 @@ $berita = query("SELECT * FROM berita ");
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">FightCovid<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -124,8 +124,8 @@ $berita = query("SELECT * FROM berita ");
           <div class="col-md-10 mt-lg-5 text-center">
             <div class="single-text owl-carousel">
               <div class="slide">
-                <h1 class="text-uppercase" data-aos="fade-up">Selamat Datang di FightCovid</h1>
-                <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">Kunjungi layanan Jember terkait Covid19</p>
+                <h1 class="text-uppercase" data-aos="fade-up">Selamat Datang di Situs BisaSehat</h1>
+                <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">Memberikan Info Menarik Seputar Dunia Kesehatan</p>
                 <div data-aos="fade-up" data-aos-delay="100">
                 </div>
               </div>
