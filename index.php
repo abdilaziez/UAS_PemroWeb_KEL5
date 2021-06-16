@@ -171,7 +171,7 @@ $berita = query("SELECT * FROM berita ");
             <div class="team-member">
               <figure>
                 <ul class="social">
-                  <li><a href="radar.php"><span >Kunjungi</span></a></li>
+                  <li><a href="CheckPenyakit.php"><span >Kunjungi</span></a></li>
                 </ul>
                 <img src="images/CheckKese.png" alt="Image" style="width:500px;height: 300px;" class="img-fluid">
               </figure>

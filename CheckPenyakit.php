@@ -3,7 +3,7 @@ require 'connect.php';
 
 if(isset($_POST["kirim"])){
   if (pesan($_POST)>0) {
-    header("Location: radar.php");
+    header("Location: CheckPenyakit.php");
   }else {
     echo mysqli_error($conn);
   }
@@ -13,7 +13,7 @@ if(isset($_POST["kirim"])){
 <!doctype html>
 <html lang="en">
   <head>
-    <title>FightCovid &mdash; Radar</title>
+    <title>BisaSehat &mdash; Check Kesehatan</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -66,7 +66,7 @@ if(isset($_POST["kirim"])){
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">FightCovid<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -88,14 +88,14 @@ if(isset($_POST["kirim"])){
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/radar.jpeg);" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/Kesehatan4.jpg);" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
 
               <div class="col-md-8 mt-lg-5 text-center">
-                <h1>RADAR BANSOS JEMBER</h1>
-                <p class="post-meta">Platform bantuan sosial untuk menjangkau mayarakat Jember yang terdampak Covid-19</p>
+                <h1>Kirimkan Keluhan Anda</h1>
+                <p class="post-meta">Form untuk mengisi keluhan yang anda alami</p>
 
               </div>
 
@@ -103,7 +103,7 @@ if(isset($_POST["kirim"])){
       </div>
     </div>
 
-    <section class="site-section" id="about-section">
+    <!-- <section class="site-section" id="about-section">
       <div class="container">
 
         <div class="row">
@@ -170,7 +170,7 @@ if(isset($_POST["kirim"])){
             </div>
 
       </div>
-    </section>
+    </section> -->
 
     <section class="site-section bg-light" id="contact" data-aos="fade">
       <div class="container">
@@ -229,14 +229,14 @@ if(isset($_POST["kirim"])){
               <div class="row form-group">
 
                 <div class="col-md-12">
-                  <label class="text-black" for="subject">Subjek</label>
+                  <label class="text-black" for="subject">Nomer Handphone</label>
                   <input type="subject" id="subject" name="subjek" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Pesan/Pertanyaan</label>
+                  <label class="text-black" for="message">Keluhan</label>
                   <textarea name="pesan" id="message" cols="30" rows="7" class="form-control" name="pesan" placeholder="Masukkan Pertanyaan atau pesan yang ingin disampaikan"></textarea>
                 </div>
               </div>
