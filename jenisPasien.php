@@ -21,7 +21,7 @@ if(isset($_POST["kirim"])){
 <!doctype html>
 <html lang="en">
   <head>
-    <title>FightCovid &mdash; Admin</title>
+    <title>BisaSehat &mdash; Admin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -107,7 +107,7 @@ if(isset($_POST["kirim"])){
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">FightCovid<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
