@@ -93,7 +93,7 @@ $pesan = query("SELECT * FROM pesan ");
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary"></span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -134,9 +134,9 @@ $pesan = query("SELECT * FROM pesan ");
                 <thead>
                   <tr class="row100 head">
                     <th class="column100 column1" data-column="column1">No</th>
-                    <th class="column100 column2" data-column="column2">Jenis Pasien</th>
+                    <th class="column100 column2" data-column="column2">Nama Penyakit</th>
                     <th class="column100 column3" data-column="column3">Gambar</th>
-                    <th class="column100 column4" data-column="column4">Keterangan</th>
+                    <th class="column100 column4" data-column="column4">Cara Penanganan</th>
                     <th class="column100 column5" data-column="column5">Aksi</th>
                   </tr>
                 </thead>
@@ -174,7 +174,7 @@ $pesan = query("SELECT * FROM pesan ");
                         <thead>
                           <tr class="row100 head">
                             <th class="column100 column1" data-column="column1">No</th>
-                            <th class="column100 column2" data-column="column2">Judul Berita</th>
+                            <th class="column100 column2" data-column="column2">Judul Artikel</th>
                             <th class="column100 column3" data-column="column3">Tanggal Posting</th>
                             <th class="column100 column3" data-column="column3">Gambar</th>
                             <th class="column100 column4" data-column="column4">Deskripsi</th>

@@ -107,7 +107,7 @@ if(isset($_POST["kirim"])){
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary"></span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -145,7 +145,7 @@ if(isset($_POST["kirim"])){
       <div class="wrap-contact100">
         <div class="contact100-form-title" style="background-image: url(formIsian/images/bg-01.jpg);">
           <span class="contact100-form-title-1">
-            Masukkan Data Jenis Pasien
+            Masukkan Data Penyakit
           </span>
 
           <span class="contact100-form-title-2">
@@ -155,13 +155,13 @@ if(isset($_POST["kirim"])){
 
         <form class="contact100-form validate-form" action="" method="POST" enctype="multipart/form-data" >
           <div class="wrap-input100">
-            <span class="label-input100">Jenis Pasien</span>
+            <span class="label-input100">Nama Penyakit</span>
             <input class="input100" type="text" name="jenis" placeholder="Masukkan Jenis Pasien">
             <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100">
-            <span class="label-input100">Keterangan</span>
+            <span class="label-input100">Cara Penanganan</span>
             <textarea class="input100" type="text" name="keterangan" placeholder="Masukkan Keterangan atau Deskripsi terkait jenis pasien"></textarea>
             <span class="focus-input100"></span>
           </div>

@@ -89,7 +89,7 @@ $berita = query("SELECT * FROM berita ");
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.php" class="h2 mb-0">BisaSehat<span class="text-primary"></span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -97,10 +97,8 @@ $berita = query("SELECT * FROM berita ");
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#beranda" class="nav-link">Beranda</a></li>
-                <li><a href="#kenali" class="nav-link">Kenali Covid19</a></li>
-                <li><a href="#updateCovid19" class="nav-link">Update Covid19</a></li>
-                <li><a href="#rsRujukan" class="nav-link">Rumah Sakit Rujukan</a></li>
-                <li><a href="#beritaTerkini" class="nav-link">Berita Terkini</a></li>
+                <li><a href="#kenali" class="nav-link">Penanganan Penyakit</a></li>
+                <li><a href="#beritaTerkini" class="nav-link">Artikel Kesehatan</a></li>
               </ul>
             </nav>
           </div>

@@ -20,7 +20,7 @@ if(isset($_POST["kirim"])){
 <!doctype html>
 <html lang="en">
   <head>
-    <title>FightCovid &mdash; Admin</title>
+    <title>BisaSehat &mdash; Admin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -106,7 +106,7 @@ if(isset($_POST["kirim"])){
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">FightCovid<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="admin.php" class="h2 mb-0">BisaSehat<span class="text-primary"></span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -132,7 +132,7 @@ if(isset($_POST["kirim"])){
       <div class="container">
         <div class="row align-items-center justify-content-center">
               <div class="col-md-8 mt-lg-5 text-center">
-                <h1>Halaman Tambah Berita</h1>
+                <h1>Halaman Tambah Artikel Kesehatan</h1>
               </div>
         </div>
       </div>
@@ -144,18 +144,15 @@ if(isset($_POST["kirim"])){
       <div class="wrap-contact100">
         <div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
           <span class="contact100-form-title-1">
-            Tambah Data Berita
+            Tambah Artikel Kesehatan
           </span>
 
-          <span class="contact100-form-title-2">
-            Masukkan berita terbaru
-          </span>
         </div>
 
         <form class="contact100-form validate-form" action="" method="POST" enctype="multipart/form-data" >
           <div class="wrap-input100">
             <span class="label-input100">Judul</span>
-            <input class="input100" type="text" name="judul" placeholder="Masukkan Judul Berita">
+            <input class="input100" type="text" name="judul" placeholder="Masukkan Judul Artikel">
             <span class="focus-input100"></span>
           </div>
 
@@ -173,13 +170,13 @@ if(isset($_POST["kirim"])){
 
           <div class="wrap-input100">
             <span class="label-input100">Deskripsi</span>
-            <textarea class="input100" type="text" name="deskripsi" placeholder="Masukkan deskripsi berita"></textarea>
+            <textarea class="input100" type="text" name="deskripsi" placeholder="Masukkan deskripsi Artikel"></textarea>
             <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100">
             <span class="label-input100">Link</span>
-            <input class="input100" type="url" name="link" placeholder="Masukkan Link Berita">
+            <input class="input100" type="url" name="link" placeholder="Masukkan Link Artikel">
             <span class="focus-input100"></span>
           </div>
 
