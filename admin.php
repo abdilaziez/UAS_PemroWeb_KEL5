@@ -245,9 +245,9 @@ $pesan = query("SELECT * FROM pesan ");
         <div class="row text-center">
           <div class="col-md-12">
             <div class="border-top pt-1">
-              <p class="copyright"><small>
+            <p class="copyright"><small>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website by FightCovid
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website by BisaSehat.
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
 
             </div>

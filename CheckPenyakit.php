@@ -176,32 +176,12 @@ if(isset($_POST["kirim"])){
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Media Platform & Contact Us</h2>
+            <h2 class="section-title mb-3">Keluhan Bersama</h2>
           </div>
         </div>
-        <div class="row mb-5">
+        
 
-
-
-          <div class="col-md-4 text-center">
-            <p class="mb-4">
-              <span class="icon-telegram d-block h2 text-primary"></span>
-              <span>PemkabJember</span>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="mb-4">
-              <span class="icon-whatsapp d-block h2 text-primary"></span>
-              <a href="#">+62 895-3293-56207</a>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="mb-0">
-              <span class="icon-instagram d-block h2 text-primary"></span>
-              <a href="#">PemkabJember</a>
-            </p>
-          </div>
-        </div>
+        
         <div class="row">
           <div class="col-md-12 mb-5">
 
@@ -209,7 +189,7 @@ if(isset($_POST["kirim"])){
 
             <form action="" method="POST" class="p-5 bg-white">
 
-              <h2 class="h4 text-black mb-5">Ajukan Pertanyaan</h2>
+              <h2 class="h4 text-black mb-5">Ajukan Keluhan</h2>
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
@@ -262,7 +242,7 @@ if(isset($_POST["kirim"])){
             <div class="border-top pt-1">
               <p class="copyright"><small>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website by FightCovid
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website by BisaSehat.
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
 
             </div>
