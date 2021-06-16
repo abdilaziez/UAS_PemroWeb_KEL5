@@ -157,12 +157,12 @@ $berita = query("SELECT * FROM berita ");
             <div class="team-member">
               <figure>
                 <ul class="social">
-                  <li><a href="CallCenter.php"><span >Kunjungi</span></a></li>
+                  <li><a href="AboutUs.php"><span >Kunjungi</span></a></li>
                 </ul>
-                <img src="images/call.png" style="width:300px;height: 300px;" alt="Image" class="img-fluid">
+                <img src="images/Kesehatan2.jpg" style="width:500px;height: 300px;" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Layanan Call Center</h3>
+                <h3>About Us</h3>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>FightCovid &mdash; Call Center</title>
+    <title>BisaSehat &mdash; About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -54,7 +54,7 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">FightCovid<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">BisaSehat<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -76,15 +76,18 @@
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/call.png);" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/Kesehatan3.jpg);" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
 
               <div class="col-md-8 mt-lg-5 text-center">
                 <h1>Hubungi Layanan Call Center Kami</h1>
-                <p class="post-meta">Call Center Pemkab Jember &bull; (0331)425222</p>
-                <p>Melayani aduan keluhan seputar covid-19 dan layanan Emergency Lainnya</p>
+                <p class="post-meta">Owner Abdil Azies Al-Mekhani &bull; 08........</p>
+                <p>BisaSehat merupakan website bagi masyarakat untuk menangani keluhan penyakit yang diderita oleh pasien.
+                <br>
+                Tujuan dari website ini adalah untuk mencegah masyarakat dari kata sakit, dimana website ini menimalisir bagian kondisi tubuh yang kurang sehat agar sehat wal-afiat.
+                </p>
 
               </div>
 
