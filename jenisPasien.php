@@ -133,7 +133,7 @@ if(isset($_POST["kirim"])){
       <div class="container">
         <div class="row align-items-center justify-content-center">
               <div class="col-md-8 mt-lg-5 text-center">
-                <h1>Halaman Tambah Jenis Pasien</h1>
+                <h1>Tambah Tips Penanganan Penyakit</h1>
               </div>
         </div>
       </div>
@@ -160,9 +160,9 @@ if(isset($_POST["kirim"])){
             <span class="focus-input100"></span>
           </div>
 
-          <div class="wrap-input100 " >
+          <div class="wrap-input100">
             <span class="label-input100">Keterangan</span>
-            <input class="input100" type="text" name="keterangan" placeholder="Masukkan Keterangan atau Deskripsi terkait jenis pasien">
+            <textarea class="input100" type="text" name="keterangan" placeholder="Masukkan Keterangan atau Deskripsi terkait jenis pasien"></textarea>
             <span class="focus-input100"></span>
           </div>
 

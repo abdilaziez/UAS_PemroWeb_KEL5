@@ -73,11 +73,11 @@ function pesan($data)
 
   $nama = $data["nama"];
   $email = $data["email"];
-  $subjek = $data["subjek"];
+  $nomerHp = $data["nomerHp"];
   $pesan = $data["pesan"];
 
 
-  mysqli_query($conn,"INSERT INTO pesan VALUES('','$nama','$email','$subjek','$pesan')");
+  mysqli_query($conn,"INSERT INTO pesan VALUES('','$nama','$email','$nomerHp','$pesan')");
 
   return mysqli_affected_rows($conn);
 }

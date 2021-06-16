@@ -130,7 +130,7 @@ $pesan = query("SELECT * FROM pesan ");
           <div class="wrap-table100">
             <div class="table100 ver1 m-b-110">
               <table data-vertable="ver1">
-                <h1 class="m-b-10 text-center text-warning">Input Artikel Penganan Penyakit</h1>
+                <h1 class="m-b-10 text-center text-warning">Tabel Tips Penanganan Penyakit</h1>
                 <thead>
                   <tr class="row100 head">
                     <th class="column100 column1" data-column="column1">No</th>
@@ -203,6 +203,7 @@ $pesan = query("SELECT * FROM pesan ");
                   </div>
                 </div>
               </div>
+
               <div class="intro-section">
                   <div class="container-table100">
                     <div class="wrap-table100">
@@ -214,7 +215,8 @@ $pesan = query("SELECT * FROM pesan ");
                               <th class="column100 column1" data-column="column1">No</th>
                               <th class="column100 column2" data-column="column2">Nama Pengirim</th>
                               <th class="column100 column3" data-column="column3">Email</th>
-                              <th class="column100 column4" data-column="column4">Isi Pesan</th>
+                              <th class="column100 column4" data-column="column4">Nomer Hp</th>
+                              <th class="column100 column5" data-column="column5">Isi Pesan</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -224,7 +226,8 @@ $pesan = query("SELECT * FROM pesan ");
                               <td class="column100 column1" data-column="column1"><?php echo $i; ?></td>
                               <td class="column100 column2" data-column="column2"><?php echo  $var['namaLengkap'];?></td>
                               <td class="column100 column3" data-column="column3"><?php echo $var['email']; ?></td>
-                              <td class="column100 column4" data-column="column4"><?php echo $var['keterangan']; ?></td>
+                              <td class="column100 column4" data-column="column4"><?php echo $var['nomerHp']; ?></td>
+                              <td class="column100 column5" data-column="column5"><?php echo $var['keterangan']; ?></td>
                             </tr>
                           <?php $i++;?>
                           <?php endforeach; ?>

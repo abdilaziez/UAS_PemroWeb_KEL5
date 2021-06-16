@@ -227,10 +227,9 @@ if(isset($_POST["kirim"])){
               </div>
 
               <div class="row form-group">
-
                 <div class="col-md-12">
                   <label class="text-black" for="subject">Nomer Handphone</label>
-                  <input type="subject" id="subject" name="subjek" class="form-control">
+                  <input type="nomerHp" id="nomerHp" name="nomerHp" class="form-control">
                 </div>
               </div>
 
