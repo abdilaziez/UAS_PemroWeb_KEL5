@@ -151,7 +151,7 @@ $pesan = query("SELECT * FROM pesan ");
                 <?php endforeach; ?>
               </tbody>
               </table>
-              <a class="btn btn-primary" href="jenispasien.php" role="button">Tambah Data</a>
+              <a class="btn btn-primary" href="solusiPenyakit.php" role="button">Tambah Data</a>
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@ $pesan = query("SELECT * FROM pesan ");
                         <?php endforeach; ?>
                       </tbody>
                       </table>
-                      <a class="btn btn-primary" href="berita.php" role="button">Tambah Data</a>
+                      <a class="btn btn-primary" href="artikelKesehatan.php" role="button">Tambah Data</a>
                     </div>
                   </div>
                 </div>
