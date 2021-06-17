@@ -1,16 +1,10 @@
 <?php
 
 require 'connect.php';
-$datacovidPositif = query("SELECT SUM(positif) AS jumlahPositif FROM updatecovid;");
-$datacovidPDP = query("SELECT SUM(pdp) AS jumlahPDP FROM updatecovid;");
-$datacovidODP = query("SELECT SUM(odp) AS jumlahODP FROM updatecovid;");
 
 
-$jenis = query("SELECT * FROM jenispasien ");
-$gejala = query("SELECT * FROM gejala ");
-$update = query("SELECT * FROM updatecovid ");
-$rs = query("SELECT * FROM rs ");
-$berita = query("SELECT * FROM berita ");
+$penyakit = query("SELECT * FROM solusipenyakit ");
+$artikelkesehatan = query("SELECT * FROM artikelkesehatan ");
 
 
 ?>
@@ -197,7 +191,7 @@ $berita = query("SELECT * FROM berita ");
 
         <div class="row align-items-lg-center" >
           <?php $i = 1; ?>
-          <?php foreach ($jenis as $var):?>
+          <?php foreach ($penyakit as $var):?>
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
 
             <div class="owl-carousel slide-one-item-alt">
@@ -220,15 +214,6 @@ $berita = query("SELECT * FROM berita ");
       </div>
     </section>
 
-
-
-
-        
-
-
-    
-
-    
     <section class="site-section" id="beritaTerkini">
       <div class="container">
         <div class="row mb-5">
@@ -239,7 +224,7 @@ $berita = query("SELECT * FROM berita ");
 
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
-            <?php foreach ($berita as $var):?>
+            <?php foreach ($artikelkesehatan as $var):?>
             <div class="h-entry">
               <a href="single.html">
                 <img src="upload/<?php echo $var['gambar']; ?>" alt="Image" class="img-fluid">

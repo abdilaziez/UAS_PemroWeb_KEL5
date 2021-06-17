@@ -6,7 +6,7 @@ if (!isset($_SESSION["login"])) {
 }
 require 'connect.php';
 if(isset($_POST["kirim"])){
-  if (berita($_POST)>0) {
+  if (kesehatan($_POST)>0) {
     header("Location: admin.php");
   }else {
     echo mysqli_error($conn);

@@ -6,11 +6,8 @@ if (!isset($_SESSION["login"])) {
 }
 require 'connect.php';
 
-$jenis = query("SELECT * FROM jenispasien ");
-$gejala = query("SELECT * FROM gejala ");
-$update = query("SELECT * FROM updatecovid ");
-$rs = query("SELECT * FROM rs ");
-$berita = query("SELECT * FROM berita ");
+$penyakit = query("SELECT * FROM solusipenyakit ");
+$berita = query("SELECT * FROM artikelkesehatan ");
 $pesan = query("SELECT * FROM pesan ");
 
 
@@ -142,7 +139,7 @@ $pesan = query("SELECT * FROM pesan ");
                 </thead>
                 <tbody>
                 <?php $i = 1; ?>
-                <?php foreach ($jenis as $var):?>
+                <?php foreach ($penyakit as $var):?>
                   <tr class="row100">
                     <td class="column100 column1" data-column="column1"><?php echo $i; ?></td>
                     <td class="column100 column2" data-column="column2"><?php echo  $var['jenisPasien'];?></td>

@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root","","fightcovid");
+$conn = mysqli_connect("localhost","root","","bisasehat");
 
 function query($query)
 {
@@ -33,7 +33,7 @@ function registrasi($data)
 }
 
 
-function jenisPasien($data)
+function penyakit($data)
 {
   global $conn;
 
@@ -45,27 +45,12 @@ function jenisPasien($data)
     return false;
   }
 
-  mysqli_query($conn,"INSERT INTO jenisPasien VALUES('','$jenis','$keterangan','$gambar')");
+  mysqli_query($conn,"INSERT INTO solusipenyakit VALUES('','$jenis','$keterangan','$gambar')");
 
   return mysqli_affected_rows($conn);
 }
 
-function gejala($data)
-{
-  global $conn;
 
-  $gejala = $data["gejala"];
-  $deskripsi = $data["deskripsi"];
-
-  $gambar = uploadGambar();
-  if (!$gambar) {
-    return false;
-  }
-
-  mysqli_query($conn,"INSERT INTO gejala VALUES('','$gejala','$deskripsi','$gambar')");
-
-  return mysqli_affected_rows($conn);
-}
 
 function pesan($data)
 {
@@ -82,19 +67,9 @@ function pesan($data)
   return mysqli_affected_rows($conn);
 }
 
-function rs($data)
-{
-  global $conn;
 
-  $namaRs = $data["namaRs"];
-  $daerah = $data["daerah"];
 
-  mysqli_query($conn,"INSERT INTO rs VALUES('','$namaRs','$daerah')");
-
-  return mysqli_affected_rows($conn);
-}
-
-function berita($data)
+function kesehatan($data)
 {
   global $conn;
 
@@ -107,24 +82,13 @@ function berita($data)
     return false;
   }
 
-  mysqli_query($conn,"INSERT INTO berita VALUES('','$judul','$tanggal','$gambar','$deskripsi','$link')");
+  mysqli_query($conn,"INSERT INTO artikelkesehatan VALUES('','$judul','$tanggal','$gambar','$deskripsi','$link')");
 
   return mysqli_affected_rows($conn);
 }
 
 
-function tambahData($data)
-{
-  global $conn;
 
-  $positif = $data["positif"];
-  $pdp = $data["pdp"];
-  $odp = $data["odp"];
-
-  mysqli_query($conn,"INSERT INTO updatecovid VALUES('',$positif,$pdp,$odp)");
-
-  return mysqli_affected_rows($conn);
-}
 
 function uploadGambar()
 {
@@ -154,31 +118,19 @@ function uploadGambar()
 
 function hapusJenis($id_jenis){
   global $conn;
-  mysqli_query($conn,"DELETE FROM jenisPasien WHERE id_jenis = $id_jenis");
+  mysqli_query($conn,"DELETE FROM solusipenyakit WHERE id_jenis = $id_jenis");
   return mysqli_affected_rows($conn);
 }
 
-function hapusGejala($id_gejala){
-  global $conn;
-  mysqli_query($conn,"DELETE FROM gejala WHERE id_gejala = $id_gejala");
-  return mysqli_affected_rows($conn);
-}
 
-function hapusRs($id_rs){
-  global $conn;
-  mysqli_query($conn,"DELETE FROM rs WHERE id_rs = $id_rs");
-  return mysqli_affected_rows($conn);
-}
+
+
 
 function hapusBerita($id_berita){
   global $conn;
-  mysqli_query($conn,"DELETE FROM berita WHERE id_berita = $id_berita");
+  mysqli_query($conn,"DELETE FROM artikelkesehatan WHERE id_berita = $id_berita");
   return mysqli_affected_rows($conn);
 }
 
-function hapusUpdate($id_update){
-  global $conn;
-  mysqli_query($conn,"DELETE FROM updatecovid WHERE id_update = $id_update");
-  return mysqli_affected_rows($conn);
-}
+
 ?>
