@@ -129,7 +129,7 @@ if(isset($_POST["kirim"])){
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/slide_2.jpg);" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/bgpenyakit.jpg);" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
               <div class="col-md-8 mt-lg-5 text-center">
@@ -140,10 +140,9 @@ if(isset($_POST["kirim"])){
     </div>
 
     <div class="container-contact100">
-      <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
-
+      <div class="contact100-map" style="background-color: #cccccc;"></div>
       <div class="wrap-contact100">
-        <div class="contact100-form-title" style="background-image: url(formIsian/images/bg-01.jpg);">
+        <div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
           <span class="contact100-form-title-1">
             Masukkan Data Penyakit
           </span>
@@ -239,7 +238,7 @@ if(isset($_POST["kirim"])){
   <!--===============================================================================================-->
   	<script src="formIsian/vendor/countdowntime/countdowntime.js"></script>
   <!--===============================================================================================-->
-  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+  	
   	<script src="formIsian/js/map-custom.js"></script>
   <!--===============================================================================================-->
   	<script src="formIsian/js/main.js"></script>

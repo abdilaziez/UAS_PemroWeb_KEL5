@@ -4,7 +4,7 @@ html {
 
 body {
   line-height: 1.7;
-  color: gray;
+  color: rgb(105, 102, 102);
   font-weight: 400;
   font-size: 1rem; }
 
@@ -2097,3 +2097,7 @@ figure figcaption {
     .single-text .owl-dots .owl-dot.active > span {
       width: 20px;
       background-color: #fff; }
+
+form.contact100-form.validate-form{
+  background-color: #007bff;
+}

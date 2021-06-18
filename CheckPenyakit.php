@@ -88,7 +88,7 @@ if(isset($_POST["kirim"])){
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/Kesehatan4.jpg);" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/artikebg.jpg);" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
 

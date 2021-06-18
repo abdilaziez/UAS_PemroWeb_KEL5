@@ -112,7 +112,7 @@ $pesan = query("SELECT * FROM pesan ");
 
 
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/slide_2.jpg);" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/bgadmin2.jpg);" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
               <div class="col-md-8 mt-lg-5 text-center">
@@ -123,11 +123,11 @@ $pesan = query("SELECT * FROM pesan ");
     </div>
 
     <div class="intro-section">
-        <div class="container-table100">
+        <div class="container-table100" style="background-color: white;">
           <div class="wrap-table100">
             <div class="table100 ver1 m-b-110">
               <table data-vertable="ver1">
-                <h1 class="m-b-10 text-center text-warning">Tabel Tips Penanganan Penyakit</h1>
+                <h1 class="m-b-10 text-center text-black">Tabel Tips Penanganan Penyakit</h1>
                 <thead>
                   <tr class="row100 head">
                     <th class="column100 column1" data-column="column1">No</th>
@@ -163,11 +163,11 @@ $pesan = query("SELECT * FROM pesan ");
 
           
             <div class="intro-section">
-                <div class="container-table100">
+                <div class="container-table100" style="background-color:white;>
                   <div class="wrap-table100">
                     <div class="table100 ver1 m-b-110">
                       <table data-vertable="ver1">
-                        <h1 class="m-b-10 text-center text-warning">Input Artikel Kesehatan</h1>
+                        <h1 class="m-b-10 text-center text-black">Input Artikel Kesehatan</h1>
                         <thead>
                           <tr class="row100 head">
                             <th class="column100 column1" data-column="column1">No</th>
@@ -202,11 +202,11 @@ $pesan = query("SELECT * FROM pesan ");
               </div>
 
               <div class="intro-section">
-                  <div class="container-table100">
+                  <div class="container-table100" style="background-color:white;>
                     <div class="wrap-table100">
                       <div class="table100 ver1 m-b-110">
                         <table data-vertable="ver1">
-                          <h1 class="m-b-10 text-center text-warning">Tabel Rekapan Data Pesan</h1>
+                          <h1 class="m-b-10 text-center text-black">Tabel Rekapan Data Pesan</h1>
                           <thead>
                             <tr class="row100 head">
                               <th class="column100 column1" data-column="column1">No</th>
