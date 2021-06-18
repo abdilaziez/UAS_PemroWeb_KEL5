@@ -152,7 +152,7 @@ if(isset($_POST["kirim"])){
           </span>
         </div>
 
-        <form class="contact100-form validate-form" action="" method="POST" enctype="multipart/form-data" >
+        <form class="contact100-form validate-form" style="background-color:white;" action="" method="POST" enctype="multipart/form-data">
           <div class="wrap-input100">
             <span class="label-input100">Nama Penyakit</span>
             <input class="input100" type="text" name="jenis" placeholder="Masukkan Jenis Pasien">
