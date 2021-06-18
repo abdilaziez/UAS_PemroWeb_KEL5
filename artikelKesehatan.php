@@ -149,7 +149,7 @@ if(isset($_POST["kirim"])){
 
         </div>
 
-        <form class="contact100-form validate-form" action="" method="POST" enctype="multipart/form-data" >
+        <form class="contact100-form validate-form" style="background-color:white;" action="" method="POST" enctype="multipart/form-data" >
           <div class="wrap-input100">
             <span class="label-input100">Judul</span>
             <input class="input100" type="text" name="judul" placeholder="Masukkan Judul Artikel">
