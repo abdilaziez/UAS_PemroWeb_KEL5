@@ -2,9 +2,6 @@
 require 'connect.php';
 
 $id_berita = $_GET["id_berita"];
-$id_rs = $_GET["id_rs"];
-$id_update = $_GET["id_update"];
-$id_gejala = $_GET["id_gejala"];
 $id_jenis = $_GET["id_jenis"];
 
 
