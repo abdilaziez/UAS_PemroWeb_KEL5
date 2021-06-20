@@ -38,8 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `username`, `password`) VALUES
-(1, 'admin', '$2y$10$Fnl35wPiuWJ3KCaa38cs5.OOX/fmNr2Ce91EG7pVFbCnmH4hiPgli'),
-(2, 'renanta', '$2y$10$QO31gimA1BsLbYj4Nus3BeQPpcfd/Vx3LBox80NJCKSm.51fhRt9u');
+(1, 'admin', '$2y$10$Fnl35wPiuWJ3KCaa38cs5.OOX/fmNr2Ce91EG7pVFbCnmH4hiPgli');
 
 -- --------------------------------------------------------
 
